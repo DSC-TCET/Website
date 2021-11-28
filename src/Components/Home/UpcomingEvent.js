@@ -14,7 +14,7 @@ function UpcomingEvent() {
         <h1>Upcoming Event</h1>
         <br />
         <Row>
-          <Col>
+          <Col sm = {12}>
             <Card
               style={{boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
               sx={{ maxWidth: 500 }}
@@ -52,7 +52,7 @@ function UpcomingEvent() {
               </CardActions>
             </Card>
           </Col>
-          <Col>
+          <Col sm = {12}>
             <Typography variant="h5" color="text.secondary">
               Participate in the upcoming competition to win goodies and get a
               chance to receive mentorship from Google😍 and get their

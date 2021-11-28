@@ -6,14 +6,14 @@ function Abouttcet() {
     <div style={{backgroundColor:"#fafafa"}}>
       <Container style={{ height: "95vh" }}>
         <Row>
-          <Col>
+          <Col sm = {12}>
             <img
               src={tcet}
               alt="tcet"
               style={{ width: "100%", paddingTop: "5vw", paddingRight: "5vw" }}
             />
           </Col>
-          <Col style={{ marginTop: "5vw" }}>
+          <Col sm = {12} style={{ marginTop: "5vw" }}>
             <h1 id="aboutustitle">About TCET</h1>
             <br />
             <p id="aboutustext">

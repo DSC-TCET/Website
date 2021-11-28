@@ -11,7 +11,7 @@ function Stats() {
     <div style={{ background: "#f7f7f9" }}>
       <Container>
         <Row>
-          <Col>
+          <Col sm = {12}>
           <div style={{color:"#e43e2b",textAlign:"center"}}>
             <h1> {dur}+ </h1>
             <h2>Months</h2>
@@ -22,7 +22,7 @@ function Stats() {
             </div>
           </Col>
 
-          <Col>
+          <Col sm = {12}>
           <div style={{color:"#f0b501",textAlign:"center"}}>
             <h1>5+ </h1>
 
@@ -33,7 +33,7 @@ function Stats() {
             <i class="fas fa-laptop-code fa-7x"></i>
             </div>
           </Col>
-          <Col>
+          <Col sm = {12}>
           <div style={{color:"#2ba24c",textAlign:"center"}}>
           <h1>
             <CountUp
@@ -51,7 +51,7 @@ function Stats() {
             <i class="fas fa-users fa-7x"></i>
             </div>
           </Col>
-          <Col>
+          <Col sm = {12}>
           <div style={{color:"#3b7ded",textAlign:"center"}}>
             <h1><CountUp
               start={420}
