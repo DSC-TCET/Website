@@ -8,7 +8,7 @@ function Aboutus() {
     <div>
       <Container style={{ height: "95vh" }}>
         <Row>
-          <Col style={{ marginTop: "5vw" }}>
+          <Col sm = {12} style={{ marginTop: "5vw" }}>
             <h1 id="aboutustitle">Hello Techies!</h1>
 
             <br />
@@ -33,7 +33,7 @@ function Aboutus() {
               </Button>
             </div>
           </Col>
-          <Col>
+          <Col sm = {12}>
             <img
               src={hero}
               alt="hero"
