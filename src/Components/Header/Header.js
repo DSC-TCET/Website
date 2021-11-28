@@ -1,33 +1,70 @@
-import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from 'react-router-dom';
-import Nav from "react-bootstrap/Nav"
-import Container from "react-bootstrap/Container";
-import brandlogo from "../Images/gdsctcet.png"
+import React, { useState } from "react";
+import {
+  MDBNavbar,
+  MDBContainer,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBDropdown,
+  MDBDropdownMenu,
+  MDBDropdownToggle,
+  MDBDropdownItem,
+  MDBDropdownLink,
+  MDBNavbarBrand,
+} from "mdb-react-ui-kit";
+import { NavLink } from "react-router-dom";
+import brandlogo from "../Images/gdsclogo.png"
+
+
 function Header() {
+  const [showNavRight, setShowNavRight] = useState(false);
   return (
-    <div>
-      <Navbar sticky="top" style={{height:"5vw"}} bg="light" expand="lg">
-        <Container>
-        <Navbar.Brand href="#home">
-      <img
-        src={brandlogo}
-        height="75"
-        className="d-inline-block align-top"
-        alt="React Bootstrap logo"
-      />
-    </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link as={NavLink} to="/ "href="#home">About Us</Nav.Link>
-              <Nav.Link as={NavLink} to="/events" href="#link">Events</Nav.Link>
-              <Nav.Link as={NavLink} to="/team" href="#link">Team</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <MDBNavbar style={{paddingTop:'3vh',paddingBottom:"3vh"}}expand="lg" light bgColor="light">
+      <MDBContainer fluid>
+        <MDBNavbarBrand href="#">
+          <img
+            src={brandlogo}
+            height="50"
+            alt="gdsctcet"
+            loading="lazy"
+          />
+          GDSC TCET
+        </MDBNavbarBrand>
+        <MDBNavbarToggler
+          type="button"
+          data-target="#navbarRightAlignExample"
+          aria-controls="navbarRightAlignExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={() => setShowNavRight(!showNavRight)}
+        >
+          <MDBIcon icon="bars" fas />
+        </MDBNavbarToggler>
+
+        <MDBCollapse navbar show={showNavRight}>
+          <MDBNavbarNav right fullWidth={false} className="mb-2 mb-lg-0">
+            <MDBNavbarItem>
+              <MDBNavbarLink  to="/"   href="/">
+                Home
+              </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+              <MDBNavbarLink  href="/events">
+                Events
+              </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+              <MDBNavbarLink   href="team">
+                Team
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
   );
 }
 

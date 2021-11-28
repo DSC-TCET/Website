@@ -7,7 +7,7 @@ function Aboutus() {
   return (
     <div>
       <Container >
-        <Row>
+        <Row style={{marginTop:"3vh",paddingBottom:"15vh"}}>
           <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
             <h1 id="aboutustitle">Hello Techies!</h1>
 
@@ -34,11 +34,13 @@ function Aboutus() {
             </div>
           </Col>
           <Col sm={12} md={12} lg={6}>
+            <div style={{textAlign:"center"}}>
             <img
               src={hero}
               alt="hero"
-              style={{ width: "110%", paddingLeft: "5vw" }}
+              style={{ width: "90%" }}
             />
+            </div>
           </Col>
         </Row>
       </Container>

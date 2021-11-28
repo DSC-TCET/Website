@@ -13,8 +13,8 @@ function UpcomingEvent() {
       <Container style={{ paddingTop: "5vw" }}>
         <h1>Upcoming Event</h1>
         <br />
-        <Row>
-          <Col md={12} sm={12} lg={6}>
+        <Row style={{paddingBottom:"15vh"}}>
+          <Col style={{paddingBottom:"5vh"}} md={12} sm={12} lg={6}>
             <Card
               style={{boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
               sx={{ maxWidth: 500 }}
@@ -52,7 +52,8 @@ function UpcomingEvent() {
               </CardActions>
             </Card>
           </Col>
-          <Col md={12} sm={12} lg={6}>
+          <br/>
+          <Col style={{paddingBottom:"5vh"}}  md={12} sm={12} lg={6}>
             <Typography variant="h5" color="text.secondary">
               Participate in the upcoming competition to win goodies and get a
               chance to receive mentorship from Google😍 and get their
@@ -73,6 +74,7 @@ function UpcomingEvent() {
               </ul>
             </Typography>
           </Col>
+          <br/>
         </Row>
       </Container>
     </div>

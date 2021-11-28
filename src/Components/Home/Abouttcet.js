@@ -5,7 +5,7 @@ function Abouttcet() {
   return (
     <div style={{backgroundColor:"#fafafa"}}>
       <Container>
-        <Row>
+        <Row style={{paddingBottom:"10vh"}}>
           <Col md={12} sm={12} lg={6}>
             <img
               src={tcet}

@@ -45,7 +45,7 @@ function Eventgallery() {
     >
       <Container style={{ paddingTop: "5vh", paddingBottom: "5vh" }}>
         <h1 id="eventgallerytitle">Event Gallery</h1>
-        <Row>
+        <Row style={{ paddingBottom: "3vh" }} >
           <MDBCarousel showIndicators dark  showControls fade>
             <MDBCarouselInner>
               <MDBCarouselItem className="active">
@@ -99,11 +99,11 @@ function Eventgallery() {
         <Row>
           {EventList.map((item, index) => {
             return (
-              <Col md={12} sm={12} lg={4}>
+              <Col style={{ paddingBottom: "3vh" }}  md={12} sm={12} lg={4}>
                 <Card
-                  style={{ boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
+                  style={{ Width:"80%",boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
                   key={index}
-                  sx={{ maxWidth: 345 }}
+                  
                 >
                   <CardHeader title={item.title} subheader={item.date} />
                   <CardMedia
