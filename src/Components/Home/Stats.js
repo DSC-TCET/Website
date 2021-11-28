@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import bgstats from "../Images/bgstats.jpg";
 import { DateTime } from "luxon";
 import CountUp from "react-countup";
 function Stats() {
