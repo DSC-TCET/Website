@@ -46,35 +46,44 @@ function Eventgallery() {
       <Container style={{ paddingTop: "5vh", paddingBottom: "5vh" }}>
         <h1 id="eventgallerytitle">Event Gallery</h1>
         <Row>
-          <MDBCarousel showIndicators showControls fade>
+          <MDBCarousel showIndicators dark  showControls fade>
             <MDBCarouselInner>
               <MDBCarouselItem className="active">
                 <MDBCarouselElement
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+                  src="https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/events/30daysofcloud1.jpeg"
                   alt="..."
                 />
                 <MDBCarouselCaption>
-                  <h5>30Days of Cloud</h5>
+                  <h5>Cloud Study Jam</h5>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
 
               <MDBCarouselItem>
                 <MDBCarouselElement
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+                  src="https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/events/30daysofcloud2.jpeg"
                   alt="..."
                 />
                 <MDBCarouselCaption>
-                  <h5>Android Jam</h5>
+                  <h5>Cloud Study Jam</h5>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
 
               <MDBCarouselItem>
                 <MDBCarouselElement
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+                  src="https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/events/hackthehackathon1.jpeg"
                   alt="..."
                 />
                 <MDBCarouselCaption>
-                  <h5>HackNITR</h5>
+                  <h5>Tech Talk</h5>
+                </MDBCarouselCaption>
+              </MDBCarouselItem>
+              <MDBCarouselItem>
+                <MDBCarouselElement
+                  src="https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/events/hackthehackathon4.jpeg"
+                  alt="..."
+                />
+                <MDBCarouselCaption>
+                  <h5>Tech Talk</h5>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
             </MDBCarouselInner>
