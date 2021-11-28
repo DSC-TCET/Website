@@ -10,11 +10,11 @@ import upeve from "../Images/upcomingevent.jpeg";
 function UpcomingEvent() {
   return (
     <div style={{ background: "#f7f7f9"}}>
-      <Container style={{ height: "95vh", paddingTop: "5vw" }}>
+      <Container style={{ paddingTop: "5vw" }}>
         <h1>Upcoming Event</h1>
         <br />
         <Row>
-          <Col>
+          <Col md={12} sm={12} lg={6}>
             <Card
               style={{boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
               sx={{ maxWidth: 500 }}
@@ -52,7 +52,7 @@ function UpcomingEvent() {
               </CardActions>
             </Card>
           </Col>
-          <Col>
+          <Col md={12} sm={12} lg={6}>
             <Typography variant="h5" color="text.secondary">
               Participate in the upcoming competition to win goodies and get a
               chance to receive mentorship from Google😍 and get their

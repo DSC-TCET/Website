@@ -99,7 +99,7 @@ function Eventgallery() {
         <Row>
           {EventList.map((item, index) => {
             return (
-              <Col>
+              <Col md={12} sm={12} lg={4}>
                 <Card
                   style={{ boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
                   key={index}

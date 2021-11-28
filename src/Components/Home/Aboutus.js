@@ -6,9 +6,9 @@ import hero from "../Images/hero.jpeg";
 function Aboutus() {
   return (
     <div>
-      <Container style={{ height: "95vh" }}>
+      <Container >
         <Row>
-          <Col style={{ marginTop: "5vw" }}>
+          <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
             <h1 id="aboutustitle">Hello Techies!</h1>
 
             <br />
@@ -33,7 +33,7 @@ function Aboutus() {
               </Button>
             </div>
           </Col>
-          <Col>
+          <Col sm={12} md={12} lg={6}>
             <img
               src={hero}
               alt="hero"

@@ -28,7 +28,7 @@ export const marketing = [
     },
 
     {
-        name:'Hrishikesh Omprakash Yadav',
+        name:'Hrishikesh  Yadav',
         post:'Marketing Team',
         imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/hrishikesh yadav.jpeg',
         githuburl:'https://github.com/Hrishikesh332',
@@ -76,17 +76,10 @@ export const graphics = [
         linkedinurl:'https://www.linkedin.com/in/deep-kothari-121318197',
     },
 
-    {
-        name:'Shruti Mishra',
-        post:'Graphics Team',
-        imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/',
-        githuburl:'https://github.com/ShrutiMishra-2002',
-        linkedinurl:'https://www.linkedin.com/in/shruti-mishra-b270a7203',
-    },
 
 
     {
-        name:'Rohan Rajendra Dalvi',
+        name:'Rohan Dalvi',
         post:'Graphics Team',
         imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/rohan dalvi.JPG',
         githuburl:'https://github.com/RohanRajendraDalvi',
@@ -119,7 +112,7 @@ export const android = [
 
 
     {
-        name:'Dhiraj Kumar Ramlal Chauhan',
+        name:'Dhiraj Chauhan',
         post:'Android Team',
         imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/dhiraj chauhan.jpeg',
         githuburl:'https://github.com/cdhiraj40',

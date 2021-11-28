@@ -93,12 +93,12 @@ function Team() {
                 <Tab label="Marketing" {...a11yProps(5)} />
                 <Tab label="Management" {...a11yProps(6)} />
                 <Tab label="Outreach" {...a11yProps(7)} />
-                
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
               {Lead.map((item, index) => {
                 return (
+                  <Col md={12} sm={12} lg={12}>
                   <div class="d-flex justify-content-center">
                     <MDBCard
                       key={index}
@@ -136,7 +136,7 @@ function Team() {
                         <MDBCardText>{item.post}</MDBCardText>
                       </MDBCardBody>
                       <MDBCardFooter className="text-muted">
-                      <a
+                        <a
                           rel="noreferrer"
                           href={item.githuburl}
                           target="_blank"
@@ -155,462 +155,471 @@ function Team() {
                       </MDBCardFooter>
                     </MDBCard>
                   </div>
+                  </Col>
                 );
               })}
+
             </TabPanel>
             <TabPanel value={value} index={1}>
               <Row>
-              {android.map((item, index) => {
-                return (
-                  <div class="d-flex justify-content-center">
-                    <MDBCard
-                      key={index}
-                      background="light"
-                      alignment="center"
-                      style={{
-                        maxWidth: "17rem",
-                        boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
-                      }}
-                    >
-                      <MDBCardHeader>
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image hover-overlay"
-                        >
-                          <MDBCardImage
-                            style={{ borderRadius: "50%" }}
-                            src={item.imageurl}
-                            fluid
-                            alt="..."
-                          />
-                          <a>
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.15)",
-                              }}
-                            ></div>
+                {android.map((item, index) => {
+                  return (
+                    <Col md={4} sm={12} lg={4}>
+                    <div class="d-flex justify-content-center">
+                      <MDBCard
+                        key={index}
+                        background="light"
+                        alignment="center"
+                        style={{
+                          maxWidth: "17rem",
+                          boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                        }}
+                      >
+                        <MDBCardHeader>
+                          <MDBRipple
+                            rippleColor="light"
+                            rippleTag="div"
+                            className="bg-image hover-overlay"
+                          >
+                            <MDBCardImage
+                              style={{ borderRadius: "50%" }}
+                              src={item.imageurl}
+                              fluid
+                              alt="..."
+                            />
+                            <a>
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
+                            </a>
+                          </MDBRipple>
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{item.name}</MDBCardTitle>
+                          <MDBCardText>{item.post}</MDBCardText>
+                        </MDBCardBody>
+                        <MDBCardFooter className="text-muted">
+                          <a
+                            rel="noreferrer"
+                            href={item.githuburl}
+                            target="_blank"
+                            className="fab fa-github fa-2x"
+                          >
+                            <i></i>
                           </a>
-                        </MDBRipple>
-                      </MDBCardHeader>
-                      <MDBCardBody>
-                        <MDBCardTitle>{item.name}</MDBCardTitle>
-                        <MDBCardText>{item.post}</MDBCardText>
-                      </MDBCardBody>
-                      <MDBCardFooter className="text-muted">
-                        <a
-                          rel="noreferrer"
-                          href={item.githuburl}
-                          target="_blank"
-                          className="fab fa-github fa-2x"
-                        >
-                          <i></i>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a
-                          rel="noreferrer"
-                          href={item.linkedinurl}
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                      </MDBCardFooter>
-                    </MDBCard>
-                  </div>
-                  
-                );
-              })}
+                          &nbsp;&nbsp;&nbsp;
+                          <a
+                            rel="noreferrer"
+                            href={item.linkedinurl}
+                            target="_blank"
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </MDBCardFooter>
+                      </MDBCard>
+                    </div>
+                    </Col>
+                  );
+                })}
               </Row>
             </TabPanel>
             <TabPanel value={value} index={2}>
-            <Row>
-              {cloud.map((item, index) => {
-                return (
-                  <div class="d-flex justify-content-center">
-                    <MDBCard
-                      key={index}
-                      background="light"
-                      alignment="center"
-                      style={{
-                        maxWidth: "17rem",
-                        boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
-                      }}
-                    >
-                      <MDBCardHeader>
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image hover-overlay"
-                        >
-                          <MDBCardImage
-                            style={{ borderRadius: "50%" }}
-                            src={item.imageurl}
-                            fluid
-                            alt="..."
-                          />
-                          <a>
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.15)",
-                              }}
-                            ></div>
+              <Row>
+                {cloud.map((item, index) => {
+                  return (
+                    <Col md={12} sm={12} lg={12}>
+                    <div class="d-flex justify-content-center">
+                      <MDBCard
+                        key={index}
+                        background="light"
+                        alignment="center"
+                        style={{
+                          maxWidth: "17rem",
+                          boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                        }}
+                      >
+                        <MDBCardHeader>
+                          <MDBRipple
+                            rippleColor="light"
+                            rippleTag="div"
+                            className="bg-image hover-overlay"
+                          >
+                            <MDBCardImage
+                              style={{ borderRadius: "50%" }}
+                              src={item.imageurl}
+                              fluid
+                              alt="..."
+                            />
+                            <a>
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
+                            </a>
+                          </MDBRipple>
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{item.name}</MDBCardTitle>
+                          <MDBCardText>{item.post}</MDBCardText>
+                        </MDBCardBody>
+                        <MDBCardFooter className="text-muted">
+                          <a
+                            rel="noreferrer"
+                            href={item.githuburl}
+                            target="_blank"
+                            className="fab fa-github fa-2x"
+                          >
+                            <i></i>
                           </a>
-                        </MDBRipple>
-                      </MDBCardHeader>
-                      <MDBCardBody>
-                        <MDBCardTitle>{item.name}</MDBCardTitle>
-                        <MDBCardText>{item.post}</MDBCardText>
-                      </MDBCardBody>
-                      <MDBCardFooter className="text-muted">
-                        <a
-                          rel="noreferrer"
-                          href={item.githuburl}
-                          target="_blank"
-                          className="fab fa-github fa-2x"
-                        >
-                          <i></i>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a
-                          rel="noreferrer"
-                          href={item.linkedinurl}
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                      </MDBCardFooter>
-                    </MDBCard>
-                  </div>
-                  
-                );
-              })}
+                          &nbsp;&nbsp;&nbsp;
+                          <a
+                            rel="noreferrer"
+                            href={item.linkedinurl}
+                            target="_blank"
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </MDBCardFooter>
+                      </MDBCard>
+                    </div>
+                    </Col>
+                  );
+                })}
               </Row>
             </TabPanel>
             <TabPanel value={value} index={3}>
-            <Row>
-              {graphics.map((item, index) => {
-                return (
-                  <div class="d-flex justify-content-center">
-                    <MDBCard
-                      key={index}
-                      background="light"
-                      alignment="center"
-                      style={{
-                        maxWidth: "17rem",
-                        boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
-                      }}
-                    >
-                      <MDBCardHeader>
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image hover-overlay"
-                        >
-                          <MDBCardImage
-                            style={{ borderRadius: "50%" }}
-                            src={item.imageurl}
-                            fluid
-                            alt="..."
-                          />
-                          <a>
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.15)",
-                              }}
-                            ></div>
+              <Row>
+                {graphics.map((item, index) => {
+                  return (
+                    <Col md={6} sm={12} lg={3}>
+                    <div class="d-flex justify-content-center">
+                      <MDBCard
+                        key={index}
+                        background="light"
+                        alignment="center"
+                        style={{
+                          maxWidth: "17rem",
+                          boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                        }}
+                      >
+                        <MDBCardHeader>
+                          <MDBRipple
+                            rippleColor="light"
+                            rippleTag="div"
+                            className="bg-image hover-overlay"
+                          >
+                            <MDBCardImage
+                              style={{ borderRadius: "50%" }}
+                              src={item.imageurl}
+                              fluid
+                              alt="..."
+                            />
+                            <a>
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
+                            </a>
+                          </MDBRipple>
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{item.name}</MDBCardTitle>
+                          <MDBCardText>{item.post}</MDBCardText>
+                        </MDBCardBody>
+                        <MDBCardFooter className="text-muted">
+                          <a
+                            rel="noreferrer"
+                            href={item.githuburl}
+                            target="_blank"
+                            className="fab fa-github fa-2x"
+                          >
+                            <i></i>
                           </a>
-                        </MDBRipple>
-                      </MDBCardHeader>
-                      <MDBCardBody>
-                        <MDBCardTitle>{item.name}</MDBCardTitle>
-                        <MDBCardText>{item.post}</MDBCardText>
-                      </MDBCardBody>
-                      <MDBCardFooter className="text-muted">
-                        <a
-                          rel="noreferrer"
-                          href={item.githuburl}
-                          target="_blank"
-                          className="fab fa-github fa-2x"
-                        >
-                          <i></i>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a
-                          rel="noreferrer"
-                          href={item.linkedinurl}
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                      </MDBCardFooter>
-                    </MDBCard>
-                  </div>
-                  
-                );
-              })}
+                          &nbsp;&nbsp;&nbsp;
+                          <a
+                            rel="noreferrer"
+                            href={item.linkedinurl}
+                            target="_blank"
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </MDBCardFooter>
+                      </MDBCard>
+                    </div>
+                    </Col>
+                  );
+                })}
               </Row>
             </TabPanel>
             <TabPanel value={value} index={4}>
-            <Row>
-              {ai_ml.map((item, index) => {
-                return (
-                  <div class="d-flex justify-content-center">
-                    <MDBCard
-                      key={index}
-                      background="light"
-                      alignment="center"
-                      style={{
-                        maxWidth: "17rem",
-                        boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
-                      }}
-                    >
-                      <MDBCardHeader>
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image hover-overlay"
-                        >
-                          <MDBCardImage
-                            style={{ borderRadius: "50%" }}
-                            src={item.imageurl}
-                            fluid
-                            alt="..."
-                          />
-                          <a>
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.15)",
-                              }}
-                            ></div>
+              <Row>
+                {ai_ml.map((item, index) => {
+                  return (
+                    <Col md={12} sm={12} lg={12}>
+                    <div class="d-flex justify-content-center">
+                      <MDBCard
+                        key={index}
+                        background="light"
+                        alignment="center"
+                        style={{
+                          maxWidth: "17rem",
+                          boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                        }}
+                      >
+                        <MDBCardHeader>
+                          <MDBRipple
+                            rippleColor="light"
+                            rippleTag="div"
+                            className="bg-image hover-overlay"
+                          >
+                            <MDBCardImage
+                              style={{ borderRadius: "50%" }}
+                              src={item.imageurl}
+                              fluid
+                              alt="..."
+                            />
+                            <a>
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
+                            </a>
+                          </MDBRipple>
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{item.name}</MDBCardTitle>
+                          <MDBCardText>{item.post}</MDBCardText>
+                        </MDBCardBody>
+                        <MDBCardFooter className="text-muted">
+                          <a
+                            rel="noreferrer"
+                            href={item.githuburl}
+                            target="_blank"
+                            className="fab fa-github fa-2x"
+                          >
+                            <i></i>
                           </a>
-                        </MDBRipple>
-                      </MDBCardHeader>
-                      <MDBCardBody>
-                        <MDBCardTitle>{item.name}</MDBCardTitle>
-                        <MDBCardText>{item.post}</MDBCardText>
-                      </MDBCardBody>
-                      <MDBCardFooter className="text-muted">
-                        <a
-                          rel="noreferrer"
-                          href={item.githuburl}
-                          target="_blank"
-                          className="fab fa-github fa-2x"
-                        >
-                          <i></i>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a
-                          rel="noreferrer"
-                          href={item.linkedinurl}
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                      </MDBCardFooter>
-                    </MDBCard>
-                  </div>
-                  
-                );
-              })}
+                          &nbsp;&nbsp;&nbsp;
+                          <a
+                            rel="noreferrer"
+                            href={item.linkedinurl}
+                            target="_blank"
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </MDBCardFooter>
+                      </MDBCard>
+                    </div>
+                    </Col>
+                  );
+                })}
               </Row>
             </TabPanel>
             <TabPanel value={value} index={5}>
-            <Row>
-              {marketing.map((item, index) => {
-                return (
-                  <div class="d-flex justify-content-center">
-                    <MDBCard
-                      key={index}
-                      background="light"
-                      alignment="center"
-                      style={{
-                        maxWidth: "17rem",
-                        boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
-                      }}
-                    >
-                      <MDBCardHeader>
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image hover-overlay"
-                        >
-                          <MDBCardImage
-                            style={{ borderRadius: "50%" }}
-                            src={item.imageurl}
-                            fluid
-                            alt="..."
-                          />
-                          <a>
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.15)",
-                              }}
-                            ></div>
+              <Row>
+                {marketing.map((item, index) => {
+                  return (
+                    <Col md={6} sm={12} lg={3}>
+                    <div class="d-flex justify-content-center">
+                      <MDBCard
+                        key={index}
+                        background="light"
+                        alignment="center"
+                        style={{
+                          maxWidth: "17rem",
+                          boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                        }}
+                      >
+                        <MDBCardHeader>
+                          <MDBRipple
+                            rippleColor="light"
+                            rippleTag="div"
+                            className="bg-image hover-overlay"
+                          >
+                            <MDBCardImage
+                              style={{ borderRadius: "50%" }}
+                              src={item.imageurl}
+                              fluid
+                              alt="..."
+                            />
+                            <a>
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
+                            </a>
+                          </MDBRipple>
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{item.name}</MDBCardTitle>
+                          <MDBCardText>{item.post}</MDBCardText>
+                        </MDBCardBody>
+                        <MDBCardFooter className="text-muted">
+                          <a
+                            rel="noreferrer"
+                            href={item.githuburl}
+                            target="_blank"
+                            className="fab fa-github fa-2x"
+                          >
+                            <i></i>
                           </a>
-                        </MDBRipple>
-                      </MDBCardHeader>
-                      <MDBCardBody>
-                        <MDBCardTitle>{item.name}</MDBCardTitle>
-                        <MDBCardText>{item.post}</MDBCardText>
-                      </MDBCardBody>
-                      <MDBCardFooter className="text-muted">
-                        <a
-                          rel="noreferrer"
-                          href={item.githuburl}
-                          target="_blank"
-                          className="fab fa-github fa-2x"
-                        >
-                          <i></i>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a
-                          rel="noreferrer"
-                          href={item.linkedinurl}
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                      </MDBCardFooter>
-                    </MDBCard>
-                  </div>
-                  
-                );
-              })}
+                          &nbsp;&nbsp;&nbsp;
+                          <a
+                            rel="noreferrer"
+                            href={item.linkedinurl}
+                            target="_blank"
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </MDBCardFooter>
+                      </MDBCard>
+                    </div>
+                    </Col>
+                  );
+                })}
               </Row>
             </TabPanel>
             <TabPanel value={value} index={6}>
-            <Row>
-              {management.map((item, index) => {
-                return (
-                  <div class="d-flex justify-content-center">
-                    <MDBCard
-                      key={index}
-                      background="light"
-                      alignment="center"
-                      style={{
-                        maxWidth: "17rem",
-                        boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
-                      }}
-                    >
-                      <MDBCardHeader>
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image hover-overlay"
-                        >
-                          <MDBCardImage
-                            style={{ borderRadius: "50%" }}
-                            src={item.imageurl}
-                            fluid
-                            alt="..."
-                          />
-                          <a>
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.15)",
-                              }}
-                            ></div>
+              <Row>
+                {management.map((item, index) => {
+                  return (
+                    <Col md={12} sm={12} lg={12}>
+                    <div class="d-flex justify-content-center">
+                      <MDBCard
+                        key={index}
+                        background="light"
+                        alignment="center"
+                        style={{
+                          maxWidth: "17rem",
+                          boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                        }}
+                      >
+                        <MDBCardHeader>
+                          <MDBRipple
+                            rippleColor="light"
+                            rippleTag="div"
+                            className="bg-image hover-overlay"
+                          >
+                            <MDBCardImage
+                              style={{ borderRadius: "50%" }}
+                              src={item.imageurl}
+                              fluid
+                              alt="..."
+                            />
+                            <a>
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
+                            </a>
+                          </MDBRipple>
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{item.name}</MDBCardTitle>
+                          <MDBCardText>{item.post}</MDBCardText>
+                        </MDBCardBody>
+                        <MDBCardFooter className="text-muted">
+                          <a
+                            rel="noreferrer"
+                            href={item.githuburl}
+                            target="_blank"
+                            className="fab fa-github fa-2x"
+                          >
+                            <i></i>
                           </a>
-                        </MDBRipple>
-                      </MDBCardHeader>
-                      <MDBCardBody>
-                        <MDBCardTitle>{item.name}</MDBCardTitle>
-                        <MDBCardText>{item.post}</MDBCardText>
-                      </MDBCardBody>
-                      <MDBCardFooter className="text-muted">
-                        <a
-                          rel="noreferrer"
-                          href={item.githuburl}
-                          target="_blank"
-                          className="fab fa-github fa-2x"
-                        >
-                          <i></i>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a
-                          rel="noreferrer"
-                          href={item.linkedinurl}
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                      </MDBCardFooter>
-                    </MDBCard>
-                  </div>
-                  
-                );
-              })}
+                          &nbsp;&nbsp;&nbsp;
+                          <a
+                            rel="noreferrer"
+                            href={item.linkedinurl}
+                            target="_blank"
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </MDBCardFooter>
+                      </MDBCard>
+                    </div>
+                    </Col>
+                  );
+                })}
               </Row>
             </TabPanel>
             <TabPanel value={value} index={7}>
-            <Row>
-              {outreach.map((item, index) => {
-                return (
-                  <div class="d-flex justify-content-center">
-                    <MDBCard
-                      key={index}
-                      background="light"
-                      alignment="center"
-                      style={{
-                        maxWidth: "17rem",
-                        boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
-                      }}
-                    >
-                      <MDBCardHeader>
-                        <MDBRipple
-                          rippleColor="light"
-                          rippleTag="div"
-                          className="bg-image hover-overlay"
-                        >
-                          <MDBCardImage
-                            style={{ borderRadius: "50%" }}
-                            src={item.imageurl}
-                            fluid
-                            alt="..."
-                          />
-                          <a>
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.15)",
-                              }}
-                            ></div>
+              <Row>
+                {outreach.map((item, index) => {
+                  return (
+                    <Col md={12} sm={12} lg={12}>
+                    <div class="d-flex justify-content-center">
+                      <MDBCard
+                        key={index}
+                        background="light"
+                        alignment="center"
+                        style={{
+                          maxWidth: "17rem",
+                          boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                        }}
+                      >
+                        <MDBCardHeader>
+                          <MDBRipple
+                            rippleColor="light"
+                            rippleTag="div"
+                            className="bg-image hover-overlay"
+                          >
+                            <MDBCardImage
+                              style={{ borderRadius: "50%" }}
+                              src={item.imageurl}
+                              fluid
+                              alt="..."
+                            />
+                            <a>
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
+                            </a>
+                          </MDBRipple>
+                        </MDBCardHeader>
+                        <MDBCardBody>
+                          <MDBCardTitle>{item.name}</MDBCardTitle>
+                          <MDBCardText>{item.post}</MDBCardText>
+                        </MDBCardBody>
+                        <MDBCardFooter className="text-muted">
+                          <a
+                            rel="noreferrer"
+                            href={item.githuburl}
+                            target="_blank"
+                            className="fab fa-github fa-2x"
+                          >
+                            <i></i>
                           </a>
-                        </MDBRipple>
-                      </MDBCardHeader>
-                      <MDBCardBody>
-                        <MDBCardTitle>{item.name}</MDBCardTitle>
-                        <MDBCardText>{item.post}</MDBCardText>
-                      </MDBCardBody>
-                      <MDBCardFooter className="text-muted">
-                        <a
-                          rel="noreferrer"
-                          href={item.githuburl}
-                          target="_blank"
-                          className="fab fa-github fa-2x"
-                        >
-                          <i></i>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a
-                          rel="noreferrer"
-                          href={item.linkedinurl}
-                          target="_blank"
-                        >
-                          <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                      </MDBCardFooter>
-                    </MDBCard>
-                  </div>
-                  
-                );
-              })}
+                          &nbsp;&nbsp;&nbsp;
+                          <a
+                            rel="noreferrer"
+                            href={item.linkedinurl}
+                            target="_blank"
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </MDBCardFooter>
+                      </MDBCard>
+                    </div>
+                    </Col>
+                  );
+                })}
               </Row>
             </TabPanel>
           </Box>

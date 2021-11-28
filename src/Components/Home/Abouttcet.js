@@ -4,16 +4,16 @@ import tcet from "../Images/tcet.jpg";
 function Abouttcet() {
   return (
     <div style={{backgroundColor:"#fafafa"}}>
-      <Container style={{ height: "95vh" }}>
+      <Container>
         <Row>
-          <Col>
+          <Col md={12} sm={12} lg={6}>
             <img
               src={tcet}
               alt="tcet"
               style={{ width: "100%", paddingTop: "5vw", paddingRight: "5vw" }}
             />
           </Col>
-          <Col style={{ marginTop: "5vw" }}>
+          <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
             <h1 id="aboutustitle">About TCET</h1>
             <br />
             <p id="aboutustext">
