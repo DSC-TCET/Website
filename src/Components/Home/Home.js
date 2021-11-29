@@ -11,10 +11,18 @@ function Home() {
   return (
     <div>
       <Aboutus />
-      <Abouttcet />
+      <div data-aos="fade-left">
+        <Abouttcet />
+      </div>
       <Stats />
+      <div data-aos="zoom-out">
       <UpcomingEvent />
-      <Sponsor />
+      </div>
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+       <Sponsor />
+</div>
+      
       <Discord />
     </div>
   );

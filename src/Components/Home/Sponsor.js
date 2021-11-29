@@ -11,7 +11,7 @@ function Sponsor() {
             variant="h6"
             style={{ textAlign: "center", color: "#050c13" }}
           >
-            Thank you our sponsors for their generous support
+            Thank you to our sponsors for their generous support
           </Typography>
           <br />
           <br />

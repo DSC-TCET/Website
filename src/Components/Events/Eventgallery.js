@@ -45,6 +45,7 @@ function Eventgallery() {
       <Container style={{ paddingTop: "5vh", paddingBottom: "5vh" }}>
         <h1 style={{textAlign: "center"}} id="eventgallerytitle">Event Gallery</h1>
         <Row style={{ paddingBottom: "3vh" }}>
+
           <MDBCarousel interval={10000} showIndicators dark showControls fade>
             <MDBCarouselInner>
               <MDBCarouselItem className="active">
@@ -91,7 +92,7 @@ function Eventgallery() {
 
         <br />
         <br />
-
+        <div data-aos="fade-down">
         <h1 style={{textAlign: "center"}} id="eventgallerytitle">Our Past Events</h1>
         <br />
         <br />
@@ -154,6 +155,7 @@ function Eventgallery() {
             );
           })}
         </Row>
+        </div>
       </Container>
     </div>
   );

@@ -9,9 +9,9 @@ import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import upeve from "../Images/upcomingevent.jpeg";
 function UpcomingEvent() {
   return (
-    <div style={{ background: "#f7f7f9" }}>
-      <Container style={{ paddingTop: "5vw" }}>
-        <h1 style={{textAlign: "center"}}>Upcoming Event</h1>
+    <div style={{ paddingTop: "5vw",background: "#f7f7f9" }}>
+      <Container >
+        <h1 style={{paddingTop: "5vw",textAlign: "center"}}>Upcoming Event</h1>
         <br />
         <Row style={{ paddingBottom: "15vh" }}>
           <Col style={{ paddingBottom: "5vh" }} md={12} sm={12} lg={6}>

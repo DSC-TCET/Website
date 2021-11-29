@@ -20,7 +20,7 @@ import {
   MDBCardImage,
   MDBRipple,
 } from "mdb-react-ui-kit";
-
+import {motion} from 'framer-motion';
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -79,8 +79,15 @@ function Team() {
     <div style={{ background: "#fafafa" }}>
       <Container style={{ paddingTop: "3vh" }}>
         <Row style={{ paddingBottom: "5vh" }}>
+        <motion.div initial={{ x:-1000}} animate={{x:0}} transition={{type:"spring",stiffness: 100,delay:0.5,duration:0.5}}>
           <h1 id="teamtitle">Meet the Team</h1>
+          </motion.div>
           <br />
+          <motion.div 
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{delay:0,duration:1}}
+            >
           <Box sx={{ width: "100%" }}>
             <Box
               style={{ textAlign: "center" }}
@@ -658,6 +665,7 @@ function Team() {
               </Row>
             </TabPanel>
           </Box>
+          </motion.div>
         </Row>
         <br />
 

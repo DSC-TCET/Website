@@ -55,15 +55,15 @@ function Header() {
             fullWidth={false}
             className="mb-2 mb-lg-0"
           >
-            <MDBNavbarItem>
+            <MDBNavbarItem style={{marginRight:"2vw"}}>
               <MDBNavbarLink to="/" href="/">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
-            <MDBNavbarItem>
+            <MDBNavbarItem style={{marginRight:"2vw"}}>
               <MDBNavbarLink href="/events">Events</MDBNavbarLink>
             </MDBNavbarItem>
-            <MDBNavbarItem>
+            <MDBNavbarItem style={{marginRight:"2vw"}}>
               <MDBNavbarLink href="team">Team</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
