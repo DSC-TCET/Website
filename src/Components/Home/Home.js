@@ -4,7 +4,7 @@ import Abouttcet from "./Abouttcet";
 import UpcomingEvent from "./UpcomingEvent";
 import Discord from "./Discord";
 import Stats from "./Stats";
-import Sponsor from "./Sponsor"
+import Sponsor from "./Sponsor";
 import "./home.css";
 
 function Home() {
@@ -12,9 +12,9 @@ function Home() {
     <div>
       <Aboutus />
       <Abouttcet />
-      <Stats/>
-      <UpcomingEvent/>
-      <Sponsor/>
+      <Stats />
+      <UpcomingEvent />
+      <Sponsor />
       <Discord />
     </div>
   );

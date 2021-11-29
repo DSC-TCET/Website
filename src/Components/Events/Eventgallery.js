@@ -1,6 +1,5 @@
 import React from "react";
 import { EventList } from "./EventList";
-import "./eventgallery.css";
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -44,9 +43,9 @@ function Eventgallery() {
       }}
     >
       <Container style={{ paddingTop: "5vh", paddingBottom: "5vh" }}>
-        <h1 id="eventgallerytitle">Event Gallery</h1>
-        <Row style={{ paddingBottom: "3vh" }} >
-          <MDBCarousel showIndicators dark  showControls fade>
+        <h1 style={{textAlign: "center"}} id="eventgallerytitle">Event Gallery</h1>
+        <Row style={{ paddingBottom: "3vh" }}>
+          <MDBCarousel interval={10000} showIndicators dark showControls fade>
             <MDBCarouselInner>
               <MDBCarouselItem className="active">
                 <MDBCarouselElement
@@ -93,17 +92,19 @@ function Eventgallery() {
         <br />
         <br />
 
-        <h1 id="eventgallerytitle">Our Past Events</h1>
+        <h1 style={{textAlign: "center"}} id="eventgallerytitle">Our Past Events</h1>
         <br />
         <br />
         <Row>
           {EventList.map((item, index) => {
             return (
-              <Col style={{ paddingBottom: "3vh" }}  md={12} sm={12} lg={4}>
+              <Col style={{ paddingBottom: "3vh" }} md={12} sm={12} lg={4}>
                 <Card
-                  style={{ Width:"80%",boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
+                  style={{
+                    Width: "80%",
+                    boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)",
+                  }}
                   key={index}
-                  
                 >
                   <CardHeader title={item.title} subheader={item.date} />
                   <CardMedia

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import {
   Lead,
   marketing,
@@ -34,21 +34,8 @@ import PaletteIcon from "@mui/icons-material/Palette";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import CodeIcon from "@mui/icons-material/Code";
-import { makeStyles } from "@material-ui/core/styles";
 import "./team.css";
 
-const useTabStyles = makeStyles({
-  root: {
-    justifyContent: "center",
-  },
-  scroller: {
-    flexGrow: "0",
-  },
-});
-
-const TabsContainer = () => {
-  const classes = useTabStyles();
-};
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -158,14 +145,13 @@ function Team() {
                               fluid
                               alt="..."
                             />
-                            <a>
-                              <div
-                                className="mask"
-                                style={{
-                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
-                                }}
-                              ></div>
-                            </a>
+
+                            <div
+                              className="mask"
+                              style={{
+                                backgroundColor: "rgba(251, 251, 251, 0.15)",
+                              }}
+                            ></div>
                           </MDBRipple>
                         </MDBCardHeader>
                         <MDBCardBody>
@@ -223,15 +209,13 @@ function Team() {
                                 fluid
                                 alt="..."
                               />
-                              <a>
-                                <div
-                                  className="mask"
-                                  style={{
-                                    backgroundColor:
-                                      "rgba(251, 251, 251, 0.15)",
-                                  }}
-                                ></div>
-                              </a>
+
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
                             </MDBRipple>
                           </MDBCardHeader>
                           <MDBCardBody>
@@ -267,7 +251,12 @@ function Team() {
               <Row>
                 {cloud.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }}  md={12} sm={12} lg={12}>
+                    <Col
+                      style={{ paddingBottom: "3vh" }}
+                      md={12}
+                      sm={12}
+                      lg={12}
+                    >
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
@@ -290,15 +279,13 @@ function Team() {
                                 fluid
                                 alt="..."
                               />
-                              <a>
-                                <div
-                                  className="mask"
-                                  style={{
-                                    backgroundColor:
-                                      "rgba(251, 251, 251, 0.15)",
-                                  }}
-                                ></div>
-                              </a>
+
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
                             </MDBRipple>
                           </MDBCardHeader>
                           <MDBCardBody>
@@ -334,7 +321,7 @@ function Team() {
               <Row>
                 {graphics.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }}  md={6} sm={12} lg={3}>
+                    <Col style={{ paddingBottom: "3vh" }} md={6} sm={12} lg={3}>
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
@@ -357,15 +344,13 @@ function Team() {
                                 fluid
                                 alt="..."
                               />
-                              <a>
-                                <div
-                                  className="mask"
-                                  style={{
-                                    backgroundColor:
-                                      "rgba(251, 251, 251, 0.15)",
-                                  }}
-                                ></div>
-                              </a>
+
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
                             </MDBRipple>
                           </MDBCardHeader>
                           <MDBCardBody>
@@ -401,7 +386,12 @@ function Team() {
               <Row>
                 {ai_ml.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }}  md={12} sm={12} lg={12}>
+                    <Col
+                      style={{ paddingBottom: "3vh" }}
+                      md={12}
+                      sm={12}
+                      lg={12}
+                    >
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
@@ -424,15 +414,13 @@ function Team() {
                                 fluid
                                 alt="..."
                               />
-                              <a>
-                                <div
-                                  className="mask"
-                                  style={{
-                                    backgroundColor:
-                                      "rgba(251, 251, 251, 0.15)",
-                                  }}
-                                ></div>
-                              </a>
+
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
                             </MDBRipple>
                           </MDBCardHeader>
                           <MDBCardBody>
@@ -468,7 +456,7 @@ function Team() {
               <Row>
                 {marketing.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }}  md={6} sm={12} lg={3}>
+                    <Col style={{ paddingBottom: "3vh" }} md={6} sm={12} lg={3}>
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
@@ -491,15 +479,13 @@ function Team() {
                                 fluid
                                 alt="..."
                               />
-                              <a>
-                                <div
-                                  className="mask"
-                                  style={{
-                                    backgroundColor:
-                                      "rgba(251, 251, 251, 0.15)",
-                                  }}
-                                ></div>
-                              </a>
+
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
                             </MDBRipple>
                           </MDBCardHeader>
                           <MDBCardBody>
@@ -535,7 +521,12 @@ function Team() {
               <Row>
                 {management.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }}  md={12} sm={12} lg={12}>
+                    <Col
+                      style={{ paddingBottom: "3vh" }}
+                      md={12}
+                      sm={12}
+                      lg={12}
+                    >
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
@@ -558,15 +549,13 @@ function Team() {
                                 fluid
                                 alt="..."
                               />
-                              <a>
-                                <div
-                                  className="mask"
-                                  style={{
-                                    backgroundColor:
-                                      "rgba(251, 251, 251, 0.15)",
-                                  }}
-                                ></div>
-                              </a>
+
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
                             </MDBRipple>
                           </MDBCardHeader>
                           <MDBCardBody>
@@ -602,7 +591,12 @@ function Team() {
               <Row>
                 {outreach.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }}  md={12} sm={12} lg={12}>
+                    <Col
+                      style={{ paddingBottom: "3vh" }}
+                      md={12}
+                      sm={12}
+                      lg={12}
+                    >
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
@@ -625,15 +619,13 @@ function Team() {
                                 fluid
                                 alt="..."
                               />
-                              <a>
-                                <div
-                                  className="mask"
-                                  style={{
-                                    backgroundColor:
-                                      "rgba(251, 251, 251, 0.15)",
-                                  }}
-                                ></div>
-                              </a>
+
+                              <div
+                                className="mask"
+                                style={{
+                                  backgroundColor: "rgba(251, 251, 251, 0.15)",
+                                }}
+                              ></div>
                             </MDBRipple>
                           </MDBCardHeader>
                           <MDBCardBody>

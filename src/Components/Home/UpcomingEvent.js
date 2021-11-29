@@ -9,14 +9,14 @@ import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import upeve from "../Images/upcomingevent.jpeg";
 function UpcomingEvent() {
   return (
-    <div style={{ background: "#f7f7f9"}}>
+    <div style={{ background: "#f7f7f9" }}>
       <Container style={{ paddingTop: "5vw" }}>
-        <h1>Upcoming Event</h1>
+        <h1 style={{textAlign: "center"}}>Upcoming Event</h1>
         <br />
-        <Row style={{paddingBottom:"15vh"}}>
-          <Col style={{paddingBottom:"5vh"}} md={12} sm={12} lg={6}>
+        <Row style={{ paddingBottom: "15vh" }}>
+          <Col style={{ paddingBottom: "5vh" }} md={12} sm={12} lg={6}>
             <Card
-              style={{boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
+              style={{ boxShadow: "3px 3px 20px rgb(0 0 0 / 0.5)" }}
               sx={{ maxWidth: 500 }}
             >
               <CardMedia
@@ -43,7 +43,11 @@ function UpcomingEvent() {
                   rel="noreferrer"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdHOZHy1iTn1sH_zm3E4p8pdqvBh6UV82NYwJLLUwPybClZVg/viewform"
                   target="_blank"
-                  style={{ fontSize:"1em",color:"black",marginLeft: "0.5em" }}
+                  style={{
+                    fontSize: "1em",
+                    color: "black",
+                    marginLeft: "0.5em",
+                  }}
                   variant="warning"
                 >
                   Get RSVP &nbsp;
@@ -52,8 +56,8 @@ function UpcomingEvent() {
               </CardActions>
             </Card>
           </Col>
-          <br/>
-          <Col style={{paddingBottom:"5vh"}}  md={12} sm={12} lg={6}>
+          <br />
+          <Col style={{ paddingBottom: "5vh" }} md={12} sm={12} lg={6}>
             <Typography variant="h5" color="text.secondary">
               Participate in the upcoming competition to win goodies and get a
               chance to receive mentorship from Google😍 and get their
@@ -74,7 +78,7 @@ function UpcomingEvent() {
               </ul>
             </Typography>
           </Col>
-          <br/>
+          <br />
         </Row>
       </Container>
     </div>

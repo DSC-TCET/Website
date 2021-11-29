@@ -3,14 +3,16 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import tcet from "../Images/tcet.jpg";
 function Abouttcet() {
   return (
-    <div style={{backgroundColor:"#fafafa"}}>
+    <div style={{ backgroundColor: "#fafafa" }}>
       <Container>
-        <Row style={{paddingBottom:"10vh"}}>
+        <Row style={{ paddingBottom: "10vh" }}>
           <Col md={12} sm={12} lg={6}>
             <img
+             width="100%"
+             height="auto" 
               src={tcet}
               alt="tcet"
-              style={{ width: "100%", paddingTop: "5vw", paddingRight: "5vw" }}
+              style={{ paddingTop: "5vw", paddingRight: "5vw" }}
             />
           </Col>
           <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>

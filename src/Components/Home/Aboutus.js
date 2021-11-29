@@ -6,8 +6,8 @@ import hero from "../Images/hero.jpeg";
 function Aboutus() {
   return (
     <div>
-      <Container >
-        <Row style={{marginTop:"3vh",paddingBottom:"15vh"}}>
+      <Container>
+        <Row style={{ marginTop: "3vh", paddingBottom: "15vh" }}>
           <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
             <h1 id="aboutustitle">Hello Techies!</h1>
 
@@ -34,12 +34,8 @@ function Aboutus() {
             </div>
           </Col>
           <Col sm={12} md={12} lg={6}>
-            <div style={{textAlign:"center"}}>
-            <img
-              src={hero}
-              alt="hero"
-              style={{ width: "90%" }}
-            />
+            <div style={{ textAlign: "center" }}>
+              <img width="90%" height="auto" src={hero} alt="hero" />
             </div>
           </Col>
         </Row>

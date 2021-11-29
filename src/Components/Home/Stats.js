@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { DateTime } from "luxon";
 import CountUp from "react-countup";
 function Stats() {
@@ -9,66 +9,68 @@ function Stats() {
   return (
     <div style={{ background: "#f7f7f9" }}>
       <Container>
-        <Row style={{paddingBottom:"5vh"}}>
-          <Col style={{paddingBottom:"5vh"}} lg={3} md={6} sm={12}>
-          <div style={{color:"#e43e2b",textAlign:"center"}}>
-            <h1> {dur}+ </h1>
-            <h2>Months</h2>
+        <Row style={{ paddingBottom: "5vh" }}>
+          <Col style={{ paddingBottom: "5vh" }} lg={3} md={6} sm={12}>
+            <div style={{ color: "#e43e2b", textAlign: "center" }}>
+              <h1> {dur}+ </h1>
+              <h2>Months</h2>
             </div>
             <br />
-            <div style={{textAlign:"center"}}>
-            <i class="far fa-calendar-alt fa-7x"></i>
+            <div style={{ textAlign: "center" }}>
+              <i class="far fa-calendar-alt fa-7x"></i>
             </div>
           </Col>
-          <br/>
-          <Col style={{paddingBottom:"5vh"}}  lg={3} md={6} sm={12}>
-          <div style={{color:"#f0b501",textAlign:"center"}}>
-            <h1>5+ </h1>
+          <br />
+          <Col style={{ paddingBottom: "5vh" }} lg={3} md={6} sm={12}>
+            <div style={{ color: "#f0b501", textAlign: "center" }}>
+              <h1>5+ </h1>
 
-            <h2>Workshops</h2>
+              <h2>Workshops</h2>
             </div>
             <br />
-            <div style={{textAlign:"center"}}>
-            <i class="fas fa-laptop-code fa-7x"></i>
-            </div>
-          </Col >
-          <br/>
-          <Col style={{paddingBottom:"5vh"}}  lg={3} md={6} sm={12}>
-          <div style={{color:"#2ba24c",textAlign:"center"}}>
-          <h1>
-            <CountUp
-              start={69}
-              end={600}
-              duration={6}
-              separator=" "
-              suffix="+"
-            />
-            </h1>
-            <h2>Members</h2>
-            <br/>
-            </div>
-            <div style={{textAlign:"center"}}>
-            <i class="fas fa-users fa-7x"></i>
+            <div style={{ textAlign: "center" }}>
+              <i class="fas fa-laptop-code fa-7x"></i>
             </div>
           </Col>
-          <br/>
-          <Col style={{paddingBottom:"5vh"}}  lg={3} md={6} sm={12}>
-          <div style={{color:"#3b7ded",textAlign:"center"}}>
-            <h1><CountUp
-              start={420}
-              end={999}
-              duration={8}
-              separator=" "
-              suffix="+"
-            /></h1>
-            <h2>Registrations</h2>
+          <br />
+          <Col style={{ paddingBottom: "5vh" }} lg={3} md={6} sm={12}>
+            <div style={{ color: "#2ba24c", textAlign: "center" }}>
+              <h1>
+                <CountUp
+                  start={69}
+                  end={600}
+                  duration={6}
+                  separator=" "
+                  suffix="+"
+                />
+              </h1>
+              <h2>Members</h2>
+              <br />
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <i class="fas fa-users fa-7x"></i>
+            </div>
+          </Col>
+          <br />
+          <Col style={{ paddingBottom: "5vh" }} lg={3} md={6} sm={12}>
+            <div style={{ color: "#3b7ded", textAlign: "center" }}>
+              <h1>
+                <CountUp
+                  start={420}
+                  end={999}
+                  duration={8}
+                  separator=" "
+                  suffix="+"
+                />
+              </h1>
+              <h2>Registrations</h2>
             </div>
             <br />
-            <div style={{textAlign:"center"}}>
-            <i class="fas fa-user-friends fa-7x"></i>
+            <div style={{ textAlign: "center" }}>
+              <i class="fas fa-user-friends fa-7x"></i>
             </div>
           </Col>
-          <br/>
+          <br />
         </Row>
       </Container>
     </div>

@@ -8,29 +8,30 @@ import {
   MDBNavbarLink,
   MDBNavbarToggler,
   MDBCollapse,
-  MDBDropdown,
-  MDBDropdownMenu,
-  MDBDropdownToggle,
-  MDBDropdownItem,
-  MDBDropdownLink,
   MDBNavbarBrand,
 } from "mdb-react-ui-kit";
-import { NavLink } from "react-router-dom";
-import brandlogo from "../Images/gdsclogo.png"
-
+import brandlogo from "../Images/gdsclogo.png";
 
 function Header() {
   const [showNavRight, setShowNavRight] = useState(false);
   return (
-    <MDBNavbar style={{paddingTop:'3vh',paddingBottom:"3vh"}}expand="lg" light bgColor="light">
+    <MDBNavbar
+      
+      style={{
+        fontFamily: "Open Sans, sans-serif",
+        paddingTop: "3vh",
+        paddingBottom: "3vh",
+      }}
+      expand="lg"
+      light
+      bgColor="light"
+    >
       <MDBContainer fluid>
-        <MDBNavbarBrand href="#">
-          <img
-            src={brandlogo}
-            height="50"
-            alt="gdsctcet"
-            loading="lazy"
-          />
+        <MDBNavbarBrand
+          style={{ paddingLeft: "5vw", fontSize: "2em" }}
+          href="/"
+        >
+          <img src={brandlogo} height="50" alt="gdsctcet" loading="lazy" />
           GDSC TCET
         </MDBNavbarBrand>
         <MDBNavbarToggler
@@ -43,23 +44,27 @@ function Header() {
         >
           <MDBIcon icon="bars" fas />
         </MDBNavbarToggler>
-
         <MDBCollapse navbar show={showNavRight}>
-          <MDBNavbarNav right fullWidth={false} className="mb-2 mb-lg-0">
+          <MDBNavbarNav
+            style={{
+              fontFamily: "Open Sans, sans-serif",
+              paddingRight: "5vw",
+              fontSize: "1.5em",
+            }}
+            right
+            fullWidth={false}
+            className="mb-2 mb-lg-0"
+          >
             <MDBNavbarItem>
-              <MDBNavbarLink  to="/"   href="/">
+              <MDBNavbarLink to="/" href="/">
                 Home
               </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-              <MDBNavbarLink  href="/events">
-                Events
-              </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-              <MDBNavbarLink   href="team">
-                Team
-              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="/events">Events</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="team">Team</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>

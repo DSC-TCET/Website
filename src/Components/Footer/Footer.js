@@ -22,7 +22,7 @@ export default function App() {
 
           <MDBCol lg="5" md="6" className="mb-4 mb-md-0">
             <ul className="list-unstyled mb-0">
-            <br />
+              <br />
               <li>
                 <h4>
                   <a
@@ -38,7 +38,7 @@ export default function App() {
                   </a>
                 </h4>
               </li>
-              
+
               <br />
               <li>
                 <h4>
@@ -61,7 +61,7 @@ export default function App() {
           </MDBCol>
 
           <MDBCol lg="3" md="6" className="container p-4 pb-0">
-          <h5 class="text-uppercase">Join Us !</h5>
+            <h5 class="text-uppercase">Join Us !</h5>
             <section class="mb-4">
               <a
                 target="_blank"

@@ -1,5 +1,4 @@
-import "./App.css";
-import { Switch, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import ScrollButton from "./Components/ScrollButton/ScrollButton";
@@ -10,7 +9,7 @@ import Team from "./Components/Team/Team";
 function App() {
   return (
     <>
-    <ScrollButton/>
+      <ScrollButton />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
