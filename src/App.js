@@ -15,7 +15,6 @@ function App() {
   }, []);
   return (
     <>
-      <ScrollButton />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

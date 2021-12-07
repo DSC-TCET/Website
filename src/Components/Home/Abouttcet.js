@@ -12,7 +12,7 @@ function Abouttcet() {
              height="auto" 
               src={tcet}
               alt="tcet"
-              style={{ paddingTop: "5vw", paddingRight: "5vw" }}
+              style={{ paddingTop: "5vw"}}
             />
           </Col>
           <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
