@@ -39,7 +39,7 @@ function Eventgallery() {
   return (
     <div
       style={{
-        backgroundImage: "url('https://www.dscvjti.tech/wavesOpacity.svg')",
+        backgroundColor: "#f3f6f7",
       }}
     >
       <Container style={{ paddingTop: "5vh", paddingBottom: "5vh" }}>

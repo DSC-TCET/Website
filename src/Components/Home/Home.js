@@ -10,19 +10,20 @@ import "./home.css";
 function Home() {
   return (
     <div>
+      
       <Aboutus />
-      <div data-aos="fade-left">
+      <div data-aos="fade-down">
         <Abouttcet />
-      </div>
+        </div>
       <Stats />
-      <div data-aos="zoom-out">
+      <div data-aos="zoom-in">
       <UpcomingEvent />
       </div>
       <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+     data-aos-anchor-placement="top-bottom">
+
        <Sponsor />
-</div>
-      
+       </div>
       <Discord />
     </div>
   );

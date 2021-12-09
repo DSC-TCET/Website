@@ -6,13 +6,14 @@ function Aboutus() {
   return (
     <div>
       <Container>
-        <Row style={{ marginTop: "3vh", paddingBottom: "15vh" }}>
-          <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
-            <motion.div
+      <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0, duration: 1 }}
             >
+        <Row style={{ marginTop: "3vh", paddingBottom: "15vh" }}>
+          <Col md={12} sm={12} lg={6} style={{ marginTop: "5vw" }}>
+            
               <h1 id="aboutustitle">Hello Techies!</h1>
               <br />
               <p id="aboutustext">
@@ -24,8 +25,7 @@ function Aboutus() {
                 peer-to-peer learning environment and build solutions for local
                 businesses and their community.
               </p>
-            </motion.div>
-            <div id="aboutusbutton">
+              <div id="aboutusbutton">
               <Button
                 target="_blank"
                 rel="noreferrer"
@@ -36,6 +36,8 @@ function Aboutus() {
                 Become a Member
               </Button>
             </div>
+            
+            
           </Col>
           <Col sm={12} md={12} lg={6}>
             <div style={{ textAlign: "center" }}>
@@ -43,6 +45,7 @@ function Aboutus() {
             </div>
           </Col>
         </Row>
+        </motion.div>
       </Container>
     </div>
   );

@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import ScrollButton from "./Components/ScrollButton/ScrollButton";
-import {useEffect} from 'react';
+import { useEffect } from "react";
 import Home from "./Components/Home/Home";
 import Eventgallery from "./Components/Events/Eventgallery";
 import Team from "./Components/Team/Team";
+import ScrollToTop from "react-scroll-to-top";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import Aos from "aos";
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <Header />
+      <ScrollToTop component={<ArrowUpwardIcon/>} style={{backgroundColor:"#4086f4"}}smooth color="white" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="events" element={<Eventgallery />}></Route>

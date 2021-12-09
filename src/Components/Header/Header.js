@@ -11,7 +11,7 @@ import {
   MDBNavbarBrand,
 } from "mdb-react-ui-kit";
 import brandlogo from "../Images/gdsclogo.png";
-
+import { motion } from "framer-motion";
 function Header() {
   const [showNavRight, setShowNavRight] = useState(false);
   return (
@@ -31,7 +31,13 @@ function Header() {
           style={{ paddingLeft: "5vw", fontSize: "2em" }}
           href="/"
         >
+           <motion.div
+    animate={{
+      scale: [1, 2, 2, 1, 1],
+      rotate: [0, 0, 270, 270, 0]}}
+      >
           <img src={brandlogo} height="50" alt="gdsctcet" loading="lazy" />
+          </motion.div>
           GDSC TCET
         </MDBNavbarBrand>
         <MDBNavbarToggler
