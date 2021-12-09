@@ -1,8 +1,8 @@
 import React from "react";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import logo from "../Images/DSC Logo transperant.png";
-
-export default function App() {
+import { motion } from "framer-motion";
+export default function Footer() {
   return (
     <MDBFooter
       style={{ backgroundColor: "#161b22" }}
@@ -16,7 +16,12 @@ export default function App() {
               rel="noreferrer"
               href="https://gdsc.community.dev/thakur-college-of-engineering-and-technology-mumbai/"
             >
+              <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
               <img src={logo} alt="logo" style={{ maxWidth: "80%" }} />
+              </motion.div>
             </a>
           </MDBCol>
 
@@ -69,7 +74,12 @@ export default function App() {
                 href="https://www.instagram.com/dsc_tcet"
                 className="btn btn-outline-light btn-floating m-1"
               >
-                <i className="fab fa-instagram fa-lg"></i>
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <i className="fab fa-instagram fa-lg"></i>
+                </motion.div>
               </a>
 
               <a
@@ -78,7 +88,12 @@ export default function App() {
                 href="https://www.youtube.com/channel/UCKnHzPvjLadS_rAnwUxo8Bg"
                 className="btn btn-outline-light btn-floating m-1"
               >
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                 <i className="fab fa-youtube fa-lg"></i>
+                </motion.div>
               </a>
 
               <a
@@ -87,7 +102,12 @@ export default function App() {
                 href="https://github.com/DSC-TCET"
                 className="btn btn-outline-light btn-floating m-1"
               >
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                 <i className="fab fa-github fa-lg"></i>
+                </motion.div>
               </a>
 
               <a
@@ -96,7 +116,12 @@ export default function App() {
                 href="https://www.linkedin.com/company/dsc-tcet"
                 className="btn btn-outline-light btn-floating m-1"
               >
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                 <i className="fab fa-linkedin fa-lg"></i>
+                </motion.div>
               </a>
 
               <a
@@ -105,7 +130,13 @@ export default function App() {
                 href="https://discord.gg/tTbapHJthQ"
                 class="btn btn-outline-light btn-floating m-1"
               >
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                
                 <i class="fab fa-discord fa-lg"></i>
+                </motion.div>
               </a>
             </section>
           </MDBCol>
