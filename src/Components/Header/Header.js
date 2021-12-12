@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   MDBNavbar,
   MDBContainer,
@@ -12,11 +13,12 @@ import {
 } from "mdb-react-ui-kit";
 import brandlogo from "../Images/gdsclogo.png";
 import { motion } from "framer-motion";
+import { Switch, useDarkreader } from "react-darkreader";
 function Header() {
   const [showNavRight, setShowNavRight] = useState(false);
+  const [isDark, { toggle }] = useDarkreader(false);
   return (
     <MDBNavbar
-      
       style={{
         fontFamily: "Open Sans, sans-serif",
         paddingTop: "3vh",
@@ -31,12 +33,13 @@ function Header() {
           style={{ paddingLeft: "5vw", fontSize: "2em" }}
           href="/"
         >
-           <motion.div
-    animate={{
-      scale: [1, 2, 2, 1, 1],
-      rotate: [0, 0, 270, 270, 0]}}
-      >
-          <img src={brandlogo} height="50" alt="gdsctcet" loading="lazy" />
+          <motion.div
+            animate={{
+              scale: [1, 2, 2, 1, 1],
+              rotate: [0, 0, 270, 270, 0],
+            }}
+          >
+            <img src={brandlogo} height="50" alt="gdsctcet" loading="lazy" />
           </motion.div>
           GDSC TCET
         </MDBNavbarBrand>
@@ -61,16 +64,23 @@ function Header() {
             fullWidth={false}
             className="mb-2 mb-lg-0"
           >
-            <MDBNavbarItem style={{marginRight:"2vw"}}>
-              <MDBNavbarLink to="/" href="/">
-                Home
-              </MDBNavbarLink>
+            <MDBNavbarItem style={{ marginRight: "2vw" }}>
+              <Link to="/">
+                <MDBNavbarLink>Home</MDBNavbarLink>
+              </Link>
             </MDBNavbarItem>
-            <MDBNavbarItem style={{marginRight:"2vw"}}>
-              <MDBNavbarLink href="/events">Events</MDBNavbarLink>
+            <MDBNavbarItem style={{ marginRight: "2vw" }}>
+              <Link to="/events">
+                <MDBNavbarLink>Events</MDBNavbarLink>
+              </Link>
             </MDBNavbarItem>
-            <MDBNavbarItem style={{marginRight:"2vw"}}>
-              <MDBNavbarLink href="team">Team</MDBNavbarLink>
+            <MDBNavbarItem style={{ marginRight: "2vw" }}>
+              <Link to="/team">
+                <MDBNavbarLink>Team</MDBNavbarLink>
+              </Link>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <Switch checked={isDark} onChange={toggle} />
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
