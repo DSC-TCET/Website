@@ -2,7 +2,7 @@
   "name": "gdsctcet",
   "version": "0.1.0",
   "author": "Ranveer",
-  "homepage": "https://gdsctcet.netlify.app/",
+  "homepage": "http://www.gdsctcet.tech/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.5.0",
