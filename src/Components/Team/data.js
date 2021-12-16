@@ -43,6 +43,14 @@ export const marketing = [
         linkedinurl:'https://www.linkedin.com/in/khushibhoj/',
     },
 
+    {
+        name:'Palak Agrawal',
+        post:'Marketing Team',
+        imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/palak agarwal.jpg',
+        githuburl:'https://github.com/palakagarwal369',
+        linkedinurl:'https://www.linkedin.com/in/palak-agarwal-6863991b3/',
+    },
+
 ]
 
 
@@ -92,6 +100,23 @@ export const graphics = [
         imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/aman syed.jpg',
         githuburl:'https://github.com/amannsyed',
         linkedinurl:'https://www.linkedin.com/in/amannsyed',
+    },
+
+    {
+        name:'Eesha Pandit',
+        post:'Graphics Team',
+        imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/eesha pandit.jpg ',
+        githuburl:'https://github.com/Eeshapandit',
+        linkedinurl:'https://www.linkedin.com/in/eesha-pandit-ba61751b9/',
+    },
+
+    
+    {
+        name:'Shruti Mishra',
+        post:'Graphics Team',
+        imageurl:'https://raw.githubusercontent.com/DSC-TCET/Assets/main/image/team/shruti mishra.jpg',
+        githuburl:'https://github.com/ShrutiMishra-2002',
+        linkedinurl:'https://www.linkedin.com/in/shruti-mishra-b270a7203',
     },
     
     

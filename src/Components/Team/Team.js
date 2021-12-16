@@ -328,7 +328,7 @@ function Team() {
               <Row>
                 {graphics.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }} md={6} sm={12} lg={3}>
+                    <Col style={{ paddingBottom: "5vh" }} md={6} sm={12} lg={4}>
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
@@ -460,10 +460,10 @@ function Team() {
               </Row>
             </TabPanel>
             <TabPanel value={value} index={5}>
-              <Row>
+              <Row className = "justify-content-center">
                 {marketing.map((item, index) => {
                   return (
-                    <Col style={{ paddingBottom: "3vh" }} md={6} sm={12} lg={3}>
+                    <Col style={{ paddingBottom: "5vh" }} md={6} sm={12} lg={4}>
                       <div class="d-flex justify-content-center">
                         <MDBCard
                           key={index}
